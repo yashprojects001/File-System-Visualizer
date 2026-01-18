@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.panel {
+    background: white;
+    padding: 15px;
+    width: 33%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.folder {
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.file {
+    margin-left: 30px;
+}
+
+.children {
+    margin-left: 15px;
+    display: none;
+}
+
+.highlight {
+    background: yellow;
+}
+
+.searching {
+    background: lightblue;
+}
