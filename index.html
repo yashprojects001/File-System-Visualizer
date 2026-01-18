@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File System Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📂 File System Visualizer</h1>
+
+<div class="container">
+    <div class="panel">
+        <h2>Directory Tree</h2>
+        <div id="tree"></div>
+    </div>
+
+    <div class="panel">
+        <h2>Search</h2>
+        <input id="searchInput" placeholder="Enter file name">
+        <br><br>
+        <button onclick="dfsSearchStart()">DFS Search</button>
+        <button onclick="bfsSearchStart()">BFS Search</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="panel">
+        <h2>Analytics</h2>
+        <button onclick="calculate()">Total Size</button>
+        <button onclick="largestFile()">Largest File</button>
+        <div id="sizes"></div>
+    </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
